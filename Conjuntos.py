@@ -1,18 +1,59 @@
-#Crear un conjunto en Python    
-
-#En python los conjuntos se representan mediante la estructura "set()"
-
-#Definicion de un conjunto 
 '''
-vocales = {'a','e','i','o','u'}
-print(vocales)
+union   |
+
+'''
+A = {1,2,3,4}
+B={4,5,6,7}
+#Sea el conjunto U
+U = A | B
+
+print("Conjunto de union: ", U)
+
+
+'''
+Interseccion    &
 '''
 
+C = {1,2,3,5}
+D = {3,5,4,8,0}
 
-#usas add() para agregar algun elemento al conjunto 
+I = D & C
 
-#usar update() para ue funcione como un union 
+print("Conjunto de interseccion: ", I)
 
-#Elminar algun elemento de un conjunto "remove()"
+'''
+Diferencia -
+'''
 
-#Vaciar un conjunto clear()
+E ={2,3,6,2,34,7}
+
+F= {6,2}
+
+D2= E-F
+D1 = F-E
+print("Conjunto de la Diferencia (E-F): ", D2)
+print("Conjunto de la Diferencia (F-E): ", D1)
+
+'''
+Igualdad ==
+'''
+
+G={'a','b','c'}
+H={'c','b','a'}
+
+if G == H:
+    print("si son iguales")
+else:
+    print("No son iguales")
+
+'''
+Subconjuntos 
+'''
+
+R ={1,2,3,4}
+J={2,3}
+
+if J.issubset(R):
+    print("El conjunto J es subconjunto del conjunto R")
+else:
+    print("El conjunto J no es subconjunto del conjunto R")
